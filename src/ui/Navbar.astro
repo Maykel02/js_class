@@ -1,0 +1,38 @@
+---
+
+---
+
+<nav class="py-5 max-w-screen-2xl mx-auto w-full">
+    <div class="bg-white flex justify-between items-center py-4 px-5 rounded-md">
+        <img class="" src="/img/logo-main.png" alt="" >
+        <div class="flex justify-center items-center">
+            <img id="btnOpen" class="lg:hidden block cursor-pointer" src="/img/hamburger.svg" alt="">
+            <ul id="menu" class="lg:flex  hidden gap-5 text-base font-semibold lg:static fixed top-0 right-0 text-center lg:w-auto w-full bg-white z-50 lg:h-auto h-[90vh] duration-200">
+                <div class="w-full flex justify-end p-7">
+                    <img id="btnClose" class="cursor-pointer lg:hidden block" src="/img/plus.svg" alt="">
+                </div>
+                <li class="my-10 hover:text-[--second-color] w-36 mx-auto"><a class="after:content-[' '] after:flex after:rounded-xl after:hover:w-full after:duration-500 after:w-[0%] after:h-[3px] after:bg-[--second-color]" href="/">Servicios</a></li>
+                <li class="my-10 hover:text-[--second-color] w-36 mx-auto"><a class="after:content-[' '] after:flex after:rounded-xl after:hover:w-full after:duration-500 after:w-[0%] after:h-[3px] after:bg-[--second-color]" href="">Productos</a></li>
+                <li class="my-10 hover:text-[--second-color] w-36 mx-auto"><a class="after:content-[' '] after:flex after:rounded-xl after:hover:w-full after:duration-500 after:w-[0%] after:h-[3px] after:bg-[--second-color]" href="">Contacto</a></li>
+            </ul>
+            <a href="">
+                <img class="w-full max-w-[230px] pl-8 hidden lg:block" src="/img/phone.png" alt="">
+            </a>
+        </div>
+    </div>
+</nav>
+
+<script>
+    const btnMenuOpen = document.querySelector('#btnOpen');
+    const btnMenuClose = document.querySelector('#btnClose')
+    const menu = document.querySelector('#menu');
+
+    btnMenuOpen.addEventListener('click', function(){
+        menu.classList.toggle('hidden');
+    });
+
+    btnMenuClose.addEventListener('click', function(){
+        menu.classList.toggle('hidden');
+    });
+
+</script>

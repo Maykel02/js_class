@@ -1,0 +1,12 @@
+---
+const { href, title } = Astro.props
+---
+
+
+<div class="flex gap-4 flex-col">
+    <div class="relative w-[250px] flex justify-center mx-auto">
+        <div class="bg-[--second-color] rounded-full lg:h-[250px] h-[200px] lg:w-[250px] w-[200px]"></div>
+        <img class="absolute lg:-bottom-9 bottom-0" src={href} alt="">
+    </div>
+    <h5 class="lg:mt-16 text-center text-xl text-[--main-color] font-semibold">{title}</h5>
+</div>

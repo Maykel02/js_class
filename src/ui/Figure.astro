@@ -1,0 +1,20 @@
+---
+
+---
+
+<div class="path absolute bottom-0 w-full h-[200px]">
+    
+</div>
+<style>
+    .path{
+        clip-path: polygon(
+                50% 10%,   /* Vértice superior redondeado */
+                100% 38%,  /* Esquina derecha superior */
+                100% 100%,  /* Esquina derecha inferior */
+                0% 100%,  /* Esquina izquierda inferior */
+                0% 50%     /* Esquina izquierda superior */
+        );
+        border-radius: 100px 100px 0 0; /* Redondeo en la parte superior */
+        background-color: #F8F9FA;
+    }
+</style>

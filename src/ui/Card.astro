@@ -1,0 +1,20 @@
+---
+
+
+const { href, title } = Astro.props;
+---
+
+<div class="group">
+	<div class="overflow-hidden rounded-t-xl">
+		<img class="w-full group-hover:scale-125 duration-500" src={href} alt={title}>
+	</div>
+	<div class="bg-white h-32 mb-3 flex justify-center items-center rounded-b-xl  p-4 flex-col">
+		<div class="z-50 h-12 w-12 bg-[--second-color] rounded-full group-hover:-mt-32 duration-500 -mt-20 flex justify-center">
+			<img src="/img/icon.svg" alt="" width="18px">
+		</div>
+		<div class="relative">
+			<h2 class="pt-5 text-lg font-semibold text-center leading-none text-[--main-color] group-hover:hidden duration-100 group-hover:opacity-0">{title}</h2>
+			<p class="pt-5 text-center group-hover:block hidden leading-none group-hover:opacity-100">Eliminar el polvo de todas las superficies, incluyendo escritorios, estantes y equipos</p>
+		</div>
+	</div>
+</div>

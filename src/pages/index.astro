@@ -1,0 +1,86 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ListProducts from "../components/ListProducts.astro"
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Title from '../ui/Title.astro';
+import Button from '../ui/Button.astro';
+import Prodcutos from '../components/Prodcutos.astro';
+import Category from '../components/Category.astro';
+import Servicios from '../components/Servicios.astro';
+---
+
+<Layout title="TGI - CLEAN Eleva tus estandares de limpieza.">
+
+	<Header/>
+
+	<Title
+		title="Nuestros Servicios"
+		subTitle="Transformamos Espacios, Elevamos Estándares: Limpieza Integral para tu Hogar y Empresa"
+	/>
+
+	<Servicios />
+	
+	<section class="xl:w-[70%] w-[98%] mx-auto my-28">
+		<div class="bg-[url('/img/img-1.png')] bg-cover bg-no-repeat w-full flex xl:flex-row flex-col justify-between rounded-2xl">
+			<div class="xl:w-2/3 w-full  flex flex-col justify-center p-10">
+				<h3 class="text-[--main-color] text-5xl font-semibold"><span class="text-[--second-color]">Desinfección</span><br> y Saneamiento Ambiental</h3>
+				<p class="text-lg my-3 leading-none">Ofrecemos servicios especializados de desinfección y saneamiento ambiental para asegurar un ambiente limpio y seguro.</p>
+				<Button
+					href=""
+					label="Contáctenos"
+				/>
+			</div>
+			<div class="xl:w-1/3 w-full  flex justify-end">
+				<img class="-mt-20" src="/img/img-2.png" alt="">
+			</div>
+		</div>
+	</section>
+	
+	<Prodcutos/>
+
+	<Title
+		title="Categorías de Productos"
+		suttitle=""
+	/>
+
+	<Category/>
+
+	<section class="xl:w-[60%] lg:w-[80%] md:w-[90%] w-full px-4 mx-auto my-28">
+		<div class="bg-[url('/img/bg-post.png')] bg-cover bg-center bg-no-repeat flex lg:flex-row flex-col justify-evenly py-5 rounded-lg px-10">
+			<div class="lg:w-1/3 w-full flex flex-col justify-center">
+				<h3 class="text-[--main-color] text-4xl font-semibold"><span class="text-[--second-color]">PRODUCTOS</span> <br> DE LIMPIEZA</h3>
+				<p class="text-base">Las mejores marcas en un solo lugar</p>
+				<Button
+					href=""
+					label="Contáctenos"
+				/>
+			</div>
+			<div class="lg:w-2/3 w-full">
+				<div class="flex items-center justify-end lg:flex-row flex-col">
+					<div class="lg:w-1/2 w-full my-5">
+						<img src="/img/img-post.png" alt="">
+					</div>
+					<div class="lg:w-1/2 w-full my-5">
+						<ul class="lg:text-end text-center text-[--second-color]">
+							<li>Limpieza de Oficinas</li>
+							<li>Desinfección</li>
+							<li>Lavado de Alfombras</li>
+							<li>Fumigación de Establecimientos</li>
+							<li>Limpieza Mecanizada</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<ListProducts />
+
+	<Footer />
+
+</Layout>
+
+<style>
+	
+</style>

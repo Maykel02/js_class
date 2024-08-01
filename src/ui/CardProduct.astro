@@ -1,0 +1,25 @@
+---
+import ButtonSale from "./ButtonSale.astro"
+
+const {
+    href="",
+    title="",
+    desc="",
+    price=""    
+} = Astro.props
+---
+
+<div class="bg-white p-4 border-slate-200 border-solid border-[1px] max-w-[350px] group">
+    <div class="bg-[#F0F4F9] flex justify-center items-center lg:h-[350px]">
+        <img  class="group-hover:scale-125 duration-500" src={href} alt="">
+    </div>
+    <div class="text-center py-5 px-2">
+        <h3 class="text-[--main-color] text-lg font-semibold">{title}</h3>
+        <p class="text-base text-[--main-color] mb-4">{desc}</p>
+        <span class="text-base font-bold text-[--main-color]">{price}</span>
+        <ButtonSale
+            href={href}
+            label="Comprar"
+        />
+    </div>
+</div>
